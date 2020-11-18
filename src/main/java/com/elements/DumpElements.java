@@ -12,12 +12,14 @@ public class DumpElements {
 		SelectProject sp  = new SelectProject();
 		try {
 			int length = 250;
-			int count = 19;
+			int count = 0;
+			Thread.sleep(5000);
+			WebDriverWait ww = new WebDriverWait(driver, 100);
+			ww.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//label[contains(text(),'Element Name')])[1]")));
+			Thread.sleep(5000);
 			for (int i =count; i < length; i++) {
 				String element = elementName + count;
-				WebDriverWait ww = new WebDriverWait(driver, 20);
-				ww.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("(//label[contains(text(),'Element Name')])[1]"))));
-				Thread.sleep(2000);
+				ww.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//label[contains(text(),'Element Name')])[1]")));
 				driver.findElement(By.xpath("(//label[contains(text(),'Element Name')])[1]/following-sibling::input")).sendKeys(element);
 				sp.selectType(driver, "textfield");
 				sp.selectLocator(driver, "xpath");

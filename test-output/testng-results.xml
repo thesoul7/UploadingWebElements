@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="1149996" started-at="2020-11-18T05:03:34Z" finished-at="2020-11-18T05:22:44Z">
+  <suite name="Default suite" duration-ms="154478" started-at="2020-11-18T07:12:22Z" finished-at="2020-11-18T07:14:56Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="1149996" started-at="2020-11-18T05:03:34Z" finished-at="2020-11-18T05:22:44Z">
+    <test name="Default test" duration-ms="154478" started-at="2020-11-18T07:12:22Z" finished-at="2020-11-18T07:14:56Z">
       <class name="com.elementsupload.ElementsUpload">
-        <test-method status="PASS" signature="login()[pri:0, instance:com.elementsupload.ElementsUpload@4dfa3a9d]" name="login" is-config="true" duration-ms="23224" started-at="2020-11-18T05:03:34Z" finished-at="2020-11-18T05:03:58Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:com.elementsupload.ElementsUpload@4dfa3a9d]" name="login" is-config="true" duration-ms="13033" started-at="2020-11-18T07:12:22Z" finished-at="2020-11-18T07:12:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="test1()[pri:0, instance:com.elementsupload.ElementsUpload@4dfa3a9d]" name="test1" duration-ms="1126172" started-at="2020-11-18T05:03:58Z" finished-at="2020-11-18T05:22:44Z">
+        <test-method status="PASS" signature="test1()[pri:0, instance:com.elementsupload.ElementsUpload@4dfa3a9d]" name="test1" duration-ms="141231" started-at="2020-11-18T07:12:35Z" finished-at="2020-11-18T07:14:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.elementsupload.ElementsUpload@4dfa3a9d]" name="tearDown" is-config="true" duration-ms="571" started-at="2020-11-18T05:22:44Z" finished-at="2020-11-18T05:22:44Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.elementsupload.ElementsUpload@4dfa3a9d]" name="tearDown" is-config="true" duration-ms="189" started-at="2020-11-18T07:14:56Z" finished-at="2020-11-18T07:14:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

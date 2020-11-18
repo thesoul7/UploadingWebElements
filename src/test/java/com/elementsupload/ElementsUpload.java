@@ -17,22 +17,23 @@ import com.elements.SelectProject;
 public class ElementsUpload extends BaseClass{
 	@Test
 	public void test1() {
-		String pageName = "Data Integration Rules";
-		String elementName = "Delete";
+		String pageName = "Data Import";
+		String elementName = "Save";
 		try {
 			SelectProject sp = new SelectProject();
 			sp.selectProject(driver, 1);
 			driver.findElement(By.linkText("Repository")).click();
-			WebElement scrollTillElement = driver.findElement(By.xpath("//span[text()='Data Integration Rules']"));
-			WebDriverWait ww = new WebDriverWait(driver, 20);
+			Thread.sleep(10000);
+			WebElement scrollTillElement = driver.findElement(By.xpath("//span[text()='"+pageName+"']"));
+			WebDriverWait ww = new WebDriverWait(driver, 50);
 			ScrollIntoElement scroll = new ScrollIntoElement();
 			scroll.executeScript(driver, scrollTillElement);
 			ClickOnPage click = new ClickOnPage();
 			click.clickinOnPage(driver, pageName);
 			Actions ac = new Actions(driver);
 			ac.doubleClick(scrollTillElement).perform();
+			Thread.sleep(5000);
 			driver.findElement(By.xpath("//button[contains(text(),'Create')]")).click();
-			ww.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//b[contains(text(),'Create Element in')]"))));
 			DumpElements dp = new DumpElements();
 			dp.dumpelements(driver, elementName);
 			
