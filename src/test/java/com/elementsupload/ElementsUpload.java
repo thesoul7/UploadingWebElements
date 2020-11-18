@@ -17,7 +17,8 @@ import com.elements.SelectProject;
 public class ElementsUpload extends BaseClass{
 	@Test
 	public void test1() {
-		String elementName = "Cancel";
+		String pageName = "Data Integration Rules";
+		String elementName = "Delete";
 		try {
 			SelectProject sp = new SelectProject();
 			sp.selectProject(driver, 1);
@@ -27,7 +28,7 @@ public class ElementsUpload extends BaseClass{
 			ScrollIntoElement scroll = new ScrollIntoElement();
 			scroll.executeScript(driver, scrollTillElement);
 			ClickOnPage click = new ClickOnPage();
-			click.clickinOnPage(driver, "Data Integration Rules");
+			click.clickinOnPage(driver, pageName);
 			Actions ac = new Actions(driver);
 			ac.doubleClick(scrollTillElement).perform();
 			driver.findElement(By.xpath("//button[contains(text(),'Create')]")).click();
