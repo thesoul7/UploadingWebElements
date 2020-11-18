@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="1108690" started-at="2020-11-17T13:43:17Z" finished-at="2020-11-17T14:01:46Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="1108690" started-at="2020-11-17T13:43:17Z" finished-at="2020-11-17T14:01:46Z">
+      <class name="com.elementsupload.ElementsUpload">
+        <test-method status="PASS" signature="login()[pri:0, instance:com.elementsupload.ElementsUpload@4dfa3a9d]" name="login" is-config="true" duration-ms="24017" started-at="2020-11-17T13:43:17Z" finished-at="2020-11-17T13:43:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="test1()[pri:0, instance:com.elementsupload.ElementsUpload@4dfa3a9d]" name="test1" duration-ms="1084063" started-at="2020-11-17T13:43:41Z" finished-at="2020-11-17T14:01:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.elementsupload.ElementsUpload@4dfa3a9d]" name="tearDown" is-config="true" duration-ms="581" started-at="2020-11-17T14:01:45Z" finished-at="2020-11-17T14:01:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.elementsupload.ElementsUpload -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
